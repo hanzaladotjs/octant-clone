@@ -1,39 +1,38 @@
 export default function Navbar() {
   return (
-    <div className="w-full border-b border-gray-200 mt-2">
-      <nav className="flex justify-evenly items-center py-3 text-gray-300  text-xl">
-        <div className="flex space-x-10 items-center">
-          <svg
-            className="vw1Ry MdcNY"
-            viewBox="0 0 40 40"
-            style={{
-              height: "50",
-
-              width: "50",
-            }}
-          >
-            <g clipPath="url(#octant)">
-              <path
-                fill="#171717"
-                fillRule="evenodd"
-                d="M40 20C40 5.244 34.78 0 20 0 5.263 0 0 5.312 0 20c0 14.632 5.35 20 20 20 14.693 0 20-5.3 20-20Zm-27.067 6.058a6.06 6.06 0 0 0 5.588-3.715 9.095 9.095 0 0 0 7.854 6.697c.78.08.929-.056.929-.9v-3.62c0-.707.239-1.491 1.371-1.491h2.172c.468 0 .487-.01.752-.385 0 0 1.139-1.59 1.365-1.928.226-.338.203-.426 0-.716S31.6 18.106 31.6 18.106c-.266-.37-.288-.378-.752-.378h-2.893c-.473 0-.65.252-.65.757v2.627c0 .64 0 1.16-.93 1.16-1.35 0-2.082-1.017-2.082-2.272 0-1.1.816-2.227 2.083-2.227.852 0 .929-.204.929-.613v-5.49c0-.72-.314-.773-.93-.71a9.095 9.095 0 0 0-7.852 6.696A6.06 6.06 0 0 0 6.874 20a6.058 6.058 0 0 0 6.058 6.058Zm0-4.039a2.02 2.02 0 1 0 0-4.039 2.02 2.02 0 0 0 0 4.04Z"
-                clipRule="evenodd"
-              ></path>
-            </g>
-            <defs>
-              <clipPath id="octant">
-                <path fill="#fff" d="M0 0h40v40H0z"></path>
-              </clipPath>
-            </defs>
-          </svg>
-
-          <div className="text-gray-900 border-b border-green-700">home</div>
+    <div className="w-full border-b border-gray-200 mt-2 ">
+      <nav className="flex md:justify-evenly justify-between items-center py-3 ml-2  md:mr-20 text-gray-300  text-xl">
+        <div className="flex md:space-x-6 space-x-3">
+        <svg
+          className="vw1Ry MdcNY"
+          viewBox="0 0 40 40"
+          style={{
+            height: "45",
+            width: "45",
+          }}
+        >
+          <g clipPath="url(#octant)">
+            <path
+              fill="#171717"
+              fillRule="evenodd"
+              d="M40 20C40 5.244 34.78 0 20 0 5.263 0 0 5.312 0 20c0 14.632 5.35 20 20 20 14.693 0 20-5.3 20-20Zm-27.067 6.058a6.06 6.06 0 0 0 5.588-3.715 9.095 9.095 0 0 0 7.854 6.697c.78.08.929-.056.929-.9v-3.62c0-.707.239-1.491 1.371-1.491h2.172c.468 0 .487-.01.752-.385 0 0 1.139-1.59 1.365-1.928.226-.338.203-.426 0-.716S31.6 18.106 31.6 18.106c-.266-.37-.288-.378-.752-.378h-2.893c-.473 0-.65.252-.65.757v2.627c0 .64 0 1.16-.93 1.16-1.35 0-2.082-1.017-2.082-2.272 0-1.1.816-2.227 2.083-2.227.852 0 .929-.204.929-.613v-5.49c0-.72-.314-.773-.93-.71a9.095 9.095 0 0 0-7.852 6.696A6.06 6.06 0 0 0 6.874 20a6.058 6.058 0 0 0 6.058 6.058Zm0-4.039a2.02 2.02 0 1 0 0-4.039 2.02 2.02 0 0 0 0 4.04Z"
+              clipRule="evenodd"
+            ></path>
+          </g>
+          <defs>
+            <clipPath id="octant">
+              <path fill="#fff" d="M0 0h40v40H0z"></path>
+            </clipPath>
+          </defs>
+        </svg>
+        <div className="md:flex  hidden space-x-10 items-center">
+          <div className="text-gray-900 border-b  border-green-700">home</div>
           <div className="hover:text-gray-500 ">metrics</div>
           <div className="hover:text-gray-500 ">projects</div>
         </div>
-        
-          
-          <div className="border flex space-x-2 items-center px-5 py-2 bg-gray-100 text-md font-extrabold text-[#2d9b87] border-gray-100 rounded-2xl hover:border-green-300">
+        </div>
+
+        <div className="border  flex space-x-2 items-center px-5 py-2 bg-gray-100 text-md font-extrabold text-[#2d9b87] border-gray-100 rounded-2xl hover:border-green-300">
           <svg
             width="24px"
             height="24px"
@@ -71,13 +70,13 @@ export default function Navbar() {
               stroke-linecap="round"
               stroke-linejoin="round"
             ></path>
-          </svg> 
-          <div>Welcome to Epoch 8</div>
-          </div>
-        
+          </svg>
+          <div className="flex md:text-lg text-sm font-bold "> 29 days to allocation</div>
+        </div>
+
         <div className="flex items-center space-x-5">
-          <button className="px-3 py-3 border bg-black text-white text-lg rounded-3xl">
-            connect-wallet
+          <button className="px-5 py-3 border bg-black text-white text-lg rounded-2xl">
+            connect
           </button>
           <svg
             width="24px"
@@ -87,6 +86,7 @@ export default function Navbar() {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
             color="#000000"
+            className="md:flex hidden"
           >
             <path
               d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z"
@@ -104,7 +104,7 @@ export default function Navbar() {
             ></path>
           </svg>
           <svg
-            className="w-8 h-8 text-gray-800"
+            className="w-8 h-8 hidden md:flex text-gray-800"
             viewBox="0 0 20 20"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
