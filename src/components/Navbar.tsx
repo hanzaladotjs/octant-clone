@@ -1,7 +1,7 @@
 export default function Navbar() {
   return (
     <div className="w-full border-b border-gray-200 mt-2 ">
-      <nav className="flex md:justify-evenly justify-between items-center py-3 ml-2  md:mr-20 text-gray-300  text-xl">
+      <nav className="flex md:justify-evenly items-center py-3 ml-2 gap-7 md:mr-20 text-gray-300  text-xl">
         <div className="flex md:space-x-6 space-x-3">
         <svg
           className="vw1Ry MdcNY"
@@ -75,7 +75,7 @@ export default function Navbar() {
         </div>
 
         <div className="flex items-center space-x-5">
-          <button className="px-5 py-3 border bg-black text-white text-lg rounded-2xl">
+          <button className="px-5 py-4 border bg-black text-white text-md md:text-lg rounded-2xl">
             connect
           </button>
           <svg
