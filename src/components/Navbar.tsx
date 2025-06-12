@@ -1,7 +1,8 @@
+
 export default function Navbar() {
   return (
     <div className="w-full border-b border-gray-200 mt-2 ">
-      <nav className="flex md:justify-evenly items-center py-3 ml-2 gap-7 md:mr-20 text-gray-300  text-xl">
+      <nav className="flex md:justify-evenly items-center py-3 ml-2 gap-7 md:mr-20 text-xl">
         <div className="flex md:space-x-6 space-x-3">
         <svg
           className="vw1Ry MdcNY"
@@ -26,13 +27,13 @@ export default function Navbar() {
           </defs>
         </svg>
         <div className="md:flex  hidden space-x-10 items-center">
-          <div className="text-gray-900 border-b  border-green-700">home</div>
-          <div className="hover:text-gray-500 ">metrics</div>
-          <div className="hover:text-gray-500 ">projects</div>
+          <div className="border-b  border-green-700">home</div>
+          <div >metrics</div>
+          <div >projects</div>
         </div>
         </div>
 
-        <div className="border  flex space-x-2 items-center px-5 py-2 bg-gray-100 text-md font-extrabold text-[#2d9b87] border-gray-100 rounded-2xl hover:border-green-300">
+        <div className="border  flex space-x-2 items-center px-5 py-2 bg-gray-100 text-md font-extrabold text-[#2d9b87] border-gray-100 rounded-2xl hover:border-green-200">
           <svg
             width="24px"
             height="24px"
@@ -75,7 +76,7 @@ export default function Navbar() {
         </div>
 
         <div className="flex items-center space-x-5">
-          <button className="px-5 py-4 border bg-black text-white text-md md:text-lg rounded-2xl">
+          <button className="px-5 py-3 border bg-black text-white text-md md:text-lg rounded-3xl">
             connect
           </button>
           <svg

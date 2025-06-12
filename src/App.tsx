@@ -1,17 +1,15 @@
+import "./App.css";
+import { BoxesCore } from "./components/ui/background-boxes";
 
-import './App.css'
-
-import Home from './pages/Home'
+import Home from "./pages/Home";
 
 function App() {
- 
-
   return (
-
-   <div >
-   <Home></Home>
-   </div>
-  )
+    <div>
+      <BoxesCore ></BoxesCore>
+      <Home></Home>
+    </div>
+  );
 }
 
-export default App
+export default App;

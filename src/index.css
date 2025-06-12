@@ -1,8 +1,9 @@
 @import "tailwindcss";
-
+@import "tw-animate-css";
 
 html,body{
     color: black;
     font-family: monospace;
     font-weight: bold;
 }
+
